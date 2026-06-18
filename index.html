@@ -210,6 +210,7 @@ td a:hover{color:var(--accent2)}
     <a href="#ex3">Exercise 3 · Survey Analysis</a>
     <a href="#ex4">Exercise 4 · Cowork Dashboard</a>
     <a href="#ex5">Exercise 5 · Agent Builder</a>
+    <a href="#bonus">Bonus · In-app agents</a>
     <h3>Resources</h3>
     <a href="#tips">Tips &amp; prompts</a>
   </nav>
@@ -720,23 +721,54 @@ Tone: professional, warm, concise. Bahasa Indonesia by default; switch to Englis
     Click <b>Create</b>. Test with one of the starter prompts. When satisfied, click <b>Share</b> and add your team — they get the same one-click workflow without touching the prompt.
   </div>
   <div class="callout good"><b>The big idea:</b> You just turned a one-person, one-day workflow into a <b>team-wide capability</b>. Every month, every member of the Operations team can run the same Ops Review in minutes — consistent, grounded on CLA files, in the CLA voice.</div>
+</div>
+</section>
 
-  <div class="step-label" style="margin-top:18px"><span class="badge gold">BONUS</span> Meet the Word, PowerPoint and Excel agents</div>
-  <p>You have built a custom agent in Copilot Chat. The same pattern is built natively inside each Office app, as in-app agents you can invoke without leaving the document. Three to know:</p>
-  <ul style="margin:8px 0 12px 18px">
-    <li><b>Word agent</b> · drafts, rewrites, summarises and reviews a document in the Copilot pane. You used it in Exercise 2 to turn a transcript into formal minutes.</li>
-    <li><b>Excel agent (Analyst)</b> · runs Python on your workbook to build heatmaps, charts and pivots in seconds. You used it in Exercise 3.</li>
-    <li><b>PowerPoint agent</b> · designs and rewrites slides, and turns a Word document into a branded deck with one click.</li>
-  </ul>
+<!-- BONUS SECTION -->
+<section id="bonus">
+<div class="modulehead"><div class="num">★</div><h2>Bonus · In-app Copilot agents<small>Word, PowerPoint and Excel, without leaving the document</small></h2></div>
+<div class="activity">
+  <div class="head"><span class="num">Optional</span><span class="time">Take-home</span><span class="badge gold">BONUS</span></div>
+  <h4>Goal: Try the in-app agents inside Word, PowerPoint and Excel, then convert a Word document into a deck</h4>
+  <p>You have seen Copilot Chat, Researcher, Cowork and Agent Builder. The same pattern lives natively inside each Office app. Try one prompt in each, then turn one Word document into a fully branded PowerPoint deck with one click.</p>
+
   <div class="task-step">
-    <div class="step-label">Bonus step · Convert a Word document to PowerPoint<span class="tool-badge">POWERPOINT AGENT</span></div>
+    <div class="step-label">Prompt 1 · Word agent<span class="tool-badge">WORD</span></div>
+    <p>Open <b>03 ContosoLife_Stakeholder_Briefing.docx</b> in Word. Click the Copilot icon in the ribbon. Paste this prompt into the Copilot pane.</p>
+    <div class="prompt-lang bi"><span class="flag">🇮🇩</span>Bahasa Indonesia</div>
+    <div class="prompt prompt-plain">Tinjau dokumen Stakeholder Coordination Briefing ini dan tulis ulang sebagai ringkasan 1 halaman untuk COO. Pertahankan gaya bahasa Contoso Life Assurance (profesional, hangat, berpusat pada pelanggan). Struktur: (1) tujuan dalam 2 kalimat; (2) 3 highlight kuartal ini per audiens (klien korporat, broker, reinsurer, regulator); (3) 3 keputusan yang dibutuhkan dari COO; (4) tanggal kunci. Gunakan poin pendek, hindari jargon, Bahasa Indonesia.<button class="copy" onclick="cp(this)">Copy</button></div>
+    <div class="prompt-lang en"><span class="flag">🇬🇧</span>English</div>
+    <div class="prompt prompt-plain">Review this Stakeholder Coordination Briefing and rewrite it as a one-page summary for the COO. Keep the Contoso Life Assurance voice (professional, warm, customer-centric). Structure: (1) purpose in 2 sentences; (2) 3 highlights this quarter per audience (corporate clients, brokers, reinsurers, regulator); (3) 3 decisions needed from the COO; (4) key dates. Use short bullets, avoid jargon, English throughout.<button class="copy" onclick="cp(this)">Copy</button></div>
+  </div>
+
+  <div class="task-step">
+    <div class="step-label">Prompt 2 · Excel agent (Analyst)<span class="tool-badge">EXCEL</span></div>
+    <p>Open <b>01 ContosoLife_Claims_Operations_Survey.xlsx</b> in Excel. Click the Copilot icon. Switch to <b>Analyst</b> (Python in Excel) and paste this prompt.</p>
+    <div class="prompt-lang bi"><span class="flag">🇮🇩</span>Bahasa Indonesia</div>
+    <div class="prompt prompt-plain">Sebagai Analyst, baca sheet Claims Operations. Buatkan: (1) tabel ringkasan jumlah klaim, rata-rata Days Open, dan persen SLA breach per Region; (2) bar chart horizontal yang membandingkan rata-rata Days Open per Claim Type, urutkan dari yang terlama; (3) 3 insight singkat dalam bullet untuk COO. Tampilkan output langsung di workbook.<button class="copy" onclick="cp(this)">Copy</button></div>
+    <div class="prompt-lang en"><span class="flag">🇬🇧</span>English</div>
+    <div class="prompt prompt-plain">As Analyst, read the Claims Operations sheet. Produce: (1) a summary table of claim count, average Days Open and % SLA breach by Region; (2) a horizontal bar chart comparing average Days Open by Claim Type, sorted longest first; (3) 3 short bullet insights for the COO. Render the output directly in the workbook.<button class="copy" onclick="cp(this)">Copy</button></div>
+  </div>
+
+  <div class="task-step">
+    <div class="step-label">Prompt 3 · PowerPoint agent<span class="tool-badge">POWERPOINT</span></div>
+    <p>Open any existing CLA deck (or a blank presentation) in PowerPoint. Click the Copilot icon and paste this prompt to redesign and extend the deck.</p>
+    <div class="prompt-lang bi"><span class="flag">🇮🇩</span>Bahasa Indonesia</div>
+    <div class="prompt prompt-plain">Tinjau deck ini dan rancang ulang menggunakan tema Contoso Life Assurance (Corporate Navy #003366 dan Trust Teal #00A19A). Pertahankan judul tiap slide tapi tulis ulang isi agar lebih ringkas (maksimal 4 poin per slide). Tambahkan satu slide baru di akhir berjudul "What this means for our customers" dengan 3 poin singkat. Tambahkan ikon yang relevan dan visual sederhana.<button class="copy" onclick="cp(this)">Copy</button></div>
+    <div class="prompt-lang en"><span class="flag">🇬🇧</span>English</div>
+    <div class="prompt prompt-plain">Review this deck and redesign it using the Contoso Life Assurance theme (Corporate Navy #003366 and Trust Teal #00A19A). Keep each slide title but rewrite the content to be tighter (maximum 4 bullets per slide). Add one new slide at the end titled "What this means for our customers" with 3 short bullets. Add relevant icons and simple visuals.<button class="copy" onclick="cp(this)">Copy</button></div>
+  </div>
+
+  <div class="task-step">
+    <div class="step-label">Prompt 4 · Word → PowerPoint conversion<span class="tool-badge">POWERPOINT</span></div>
     <p>Open PowerPoint. In the Copilot pane, choose <b>Create presentation from file</b> and select the <b>ContosoLife_Q3_Executive_Summary.docx</b> you produced with Cowork (or the Ops Review minutes from Exercise 2). PowerPoint generates a branded draft deck in under a minute.</p>
     <div class="prompt-lang bi"><span class="flag">🇮🇩</span>Bahasa Indonesia</div>
-    <div class="prompt prompt-plain">Buatkan presentasi dari dokumen Word ContosoLife_Q3_Executive_Summary.docx untuk Ops Review COO. Gunakan tema merek Contoso Life Assurance (Corporate Navy #003366 dan Trust Teal #00A19A), maksimal 6 slide: judul, ringkasan Q3, 3 isu prioritas, 3 rekomendasi, langkah berikutnya, terima kasih. Setiap slide ringkas dengan poin-poin pendek, tambahkan ikon dan visual sederhana. Bahasa Indonesia, nada profesional dan hangat.<button class="copy" onclick="cp(this)">Copy</button></div>
+    <div class="prompt prompt-plain">Buatkan presentasi dari dokumen Word ContosoLife_Q3_Executive_Summary.docx untuk Ops Review COO. Gunakan tema merek Contoso Life Assurance (Corporate Navy #003366 dan Trust Teal #00A19A), maksimal 6 slide: judul, ringkasan Q3, 3 isu prioritas, 3 rekomendasi, langkah berikutnya, terima kasih. Setiap slide ringkas dengan poin pendek, tambahkan ikon dan visual sederhana. Bahasa Indonesia, nada profesional dan hangat.<button class="copy" onclick="cp(this)">Copy</button></div>
     <div class="prompt-lang en"><span class="flag">🇬🇧</span>English</div>
     <div class="prompt prompt-plain">Create a presentation from the Word document ContosoLife_Q3_Executive_Summary.docx for the COO Ops Review. Use the Contoso Life Assurance brand theme (Corporate Navy #003366 and Trust Teal #00A19A), maximum 6 slides: title, Q3 summary, 3 priority issues, 3 recommendations, next steps, thank you. Keep each slide tight with short bullets, add simple icons and visuals. English throughout, professional and warm tone.<button class="copy" onclick="cp(this)">Copy</button></div>
   </div>
-  <div class="callout good"><b>What just happened:</b> One Word document became a fully branded deck without you opening a single text box. The same agent pattern lives inside Word, Excel and PowerPoint, so whichever app you start in, Copilot is already there.</div>
+
+  <div class="callout good"><b>What just happened:</b> Word, Excel and PowerPoint each have their own Copilot agent. Whichever app you start in, Copilot is already there. And one Word document can become a fully branded deck without you opening a single text box.</div>
 </div>
 </section>
 <!-- TIPS -->
